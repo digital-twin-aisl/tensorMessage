@@ -1,0 +1,14 @@
+namespace HeatmapSchema;
+
+table Heatmap {
+    batch: int;
+    width: int;
+    height: int;
+    channels: int;
+    data: [ubyte];
+    min: float;
+    max: float;
+    type: string;
+}
+
+root_type Heatmap;
